@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "corone-app",
+      "public": "dist/corone-app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

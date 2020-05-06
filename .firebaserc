@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "corona-app-8de93": {
+      "hosting": {
+        "corone-app": [
+          "corona-app-8de93"
+        ]
+      }
+    }
+  }
+}
