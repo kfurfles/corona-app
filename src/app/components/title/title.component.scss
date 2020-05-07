@@ -1,0 +1,27 @@
+@import './../../../scss/helpers';
+@import './../../../scss/colors';
+
+.ct-title{
+  padding-top: 24px;
+  padding-bottom: 30px;
+  background-color: $opacity13-green;
+  border-radius: 0 0 50px 50px;
+
+  &__container{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__title{
+    margin: 0 30px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__sub-title{
+    font-size: 14px;
+    @include font-weight('light');
+  }
+}

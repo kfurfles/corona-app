@@ -1,0 +1,14 @@
+$fonts: (
+  ultralight: 'SF UI Display Ultralight',
+  thin: 'SF UI Display Ultralight',
+  light: 'SF UI Display Light',
+  medium: 'SF UI Display Medium',
+  semibold: 'SF UI Display Semibold',
+  bold: 'SF UI Display Bold',
+  heavy: 'SF UI Display Heavy',
+  black: 'SF UI Display Black'
+);
+
+@mixin font-weight($weight: 'medium'){
+  font-family: map-get($fonts, $weight);
+}

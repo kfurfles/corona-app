@@ -1,0 +1,13 @@
+@import './../../colors';
+
+.ng-select{}
+
+.ng-select-container{
+  border: none !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.06);
+}
+
+.ng-arrow{
+  border-color: $green transparent transparent !important;
+}

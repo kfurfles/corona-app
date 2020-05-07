@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "ca",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -20,12 +20,13 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
+              "src/assets/svg/*",
               "src/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -87,6 +88,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
+              "src/assets/svg/*",
               "src/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest"
