@@ -26,6 +26,9 @@ jobs:
       # Install the dependencies need to build the app
       - name: Install Dependencies
         run: npm install
+      
+      - name: Coverage Test
+        run: npm run test 
       # Runs a set of commands to build
       - name: Build
         run: npm run build --prod
@@ -35,18 +38,11 @@ jobs:
         with:
           name: dist
           path: dist
-
+  
   deploy:
     name: Deploy to firebase
     runs-on: ubuntu-latest
     steps:
-      # building the app before deploy
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-        with:
-          node-version: '10.x'
-      - run: npm install
-      - run: npm run build --prod
       # ddeploy the angular app to firebase
       - name: Deploy angular app to Firebase
         uses: w9jds/firebase-action@master
