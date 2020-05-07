@@ -53,4 +53,5 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          PROJECT_ID: " corona-app-8de93"
+          FIREBASE_TOKEN: ${{ secrets.firebase_token }}
