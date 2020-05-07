@@ -25,6 +25,7 @@ jobs:
 
     - name: Firebase GitHub Action
       uses: pizzafox/firebase-action@1.0.7
+      working-directory: ${{env.working-directory}}
       env:
         PROJECT_ID: " corona-app-8de93"
         FIREBASE_TOKEN: "1//0hsax3dPiCjy8CgYIARAAGBESNwF-L9IrpDZ1jw82yBog25dvYE-avMP0fuHT-NwRGMK4GciWl5WfJtDPX3mLSyyrCQVDkFPJVsQ"
