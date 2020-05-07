@@ -8,7 +8,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class TitleComponent implements OnInit {
 
-  constructor() { }
+ constructor() { }
 
   ngOnInit(): void {
   }

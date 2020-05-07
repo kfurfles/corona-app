@@ -63,6 +63,21 @@
     "inquirer-autocomplete-prompt": "^1.0.1"
   },
   "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "testMatch": [
+      "**/+(*.)+(spec).+(ts)"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html","lcov"
+    ],
     "preset": "jest-preset-angular",
     "roots": [
       "src"
