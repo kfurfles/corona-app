@@ -1,4 +1,4 @@
-# CoroneApp [![codecov](https://codecov.io/gh/kfurfles/corona-app/branch/master/graph/badge.svg)](https://codecov.io/gh/kfurfles/corona-app)
+# CoroneApp [![codecov](https://codecov.io/gh/kfurfles/corona-app/branch/master/graph/badge.svg)](https://codecov.io/gh/kfurfles/corona-app) ![.github/workflows/coverage.yml](https://github.com/kfurfles/corona-app/workflows/.github/workflows/coverage.yml/badge.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
