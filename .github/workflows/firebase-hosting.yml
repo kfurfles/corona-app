@@ -43,11 +43,13 @@ jobs:
     name: Deploy to firebase
     runs-on: ubuntu-latest
     steps:
+      # building the app before deploy
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: '10.x'
+      - run: npm install
+      - run: npm run build --prod
       # ddeploy the angular app to firebase
       - name: Deploy angular app to Firebase
         uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env:
-          PROJECT_ID: "corona-app-8de93"
-          FIREBASE_TOKEN: ${{ secrets.firebase_token }}
