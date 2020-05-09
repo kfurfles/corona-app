@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InfoCardComponent } from './info-card.component';
+import {GraphicIconComponent} from '../graphic-icon/graphic-icon.component';
+import {PersonIconComponent} from '../person-icon/person-icon.component';
 
 describe('InfoCardComponent', () => {
   let component: InfoCardComponent;
@@ -8,7 +10,11 @@ describe('InfoCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InfoCardComponent ]
+      declarations: [
+        GraphicIconComponent,
+        PersonIconComponent,
+        InfoCardComponent
+      ]
     })
     .compileComponents();
   }));
