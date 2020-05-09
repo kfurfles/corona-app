@@ -1,4 +1,35 @@
-<ng-select class="custom"></ng-select>
+<div class="ca-dashboard">
+  <ng-select class="custom"></ng-select>
+
+  <div class="ca-dashboard__card-container">
+    <ca-info-card
+      title="Novos casos"
+      [number]="infos.cases"
+      variation="purple"
+      class="ca-dashboard__card"></ca-info-card>
+
+    <ca-info-card
+      title="Novos confirmados"
+      [number]="infos.confirmed"
+      variation="orange"
+      class="ca-dashboard__card"></ca-info-card>
+
+    <ca-info-card
+      title="Total recuperados"
+      [number]="infos.recovered"
+      variation="green"
+      class="ca-dashboard__card"></ca-info-card>
+
+    <ca-info-card
+      title="Mortes"
+      [number]="infos.deaths"
+      variation="red"
+      class="ca-dashboard__card"></ca-info-card>
+
+
+  </div>
+</div>
+
 
 <!--<div class="home">-->
 <!--  <div class="c-dash" data-v-2f531d0f="">-->

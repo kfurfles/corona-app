@@ -1,6 +1,10 @@
 @import './../../../scss/helpers';
 @import './../../../scss/colors';
 
+:host{
+  display: block;
+}
+
 .ct-title{
   padding-top: 24px;
   padding-bottom: 30px;

@@ -1,2 +1,17 @@
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
+ca-dashboard{
+  display: block;
+}
+
+.ca-dashboard{
+  &__card-container{
+    margin-top: 20px;
+  }
+
+  &__card{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+}

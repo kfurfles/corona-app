@@ -1,0 +1,85 @@
+@import './../../../scss/helpers';
+@import './../../../scss/colors';
+
+:host{
+  display: block;
+}
+.ca-info-card{
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  padding: 20px;
+  position: relative;
+
+  &.purple{
+
+  }
+  &.orange{}
+  &.green{}
+  &.red{}
+
+  @mixin setInheritProperty($class,$property,$value){
+    .#{$class} & {
+      #{$property}: #{$value}
+    }
+  }
+
+  &__container{
+    z-index: 1010;
+  }
+
+  &__label{
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-container{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    @include setInheritProperty('purple','background-color',rgba($purple, 0.12));
+    @include setInheritProperty('orange','background-color',rgba($orange, 0.12));
+    @include setInheritProperty('green','background-color',rgba($light-green, 0.12));
+    @include setInheritProperty('red','background-color',rgba($red, 0.12));
+  }
+
+  &__icon{
+    @include setInheritProperty('purple','fill',rgba($purple, 0.12));
+    @include setInheritProperty('orange','fill',$orange);
+    @include setInheritProperty('green','fill',$light-green);
+    @include setInheritProperty('red','fill',$red);
+  }
+
+  &__title{
+    @include font-weight('light');
+    font-size: 18px;
+    line-height: 21px;
+    color: #53627C;
+  }
+
+  &__value{
+    text-align: left;
+    margin-top: 15px;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1E2432;
+    @include font-weight('bold');
+  }
+
+  &__graphic{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 1000;
+    opacity: 0.16;
+
+    @include setInheritProperty('purple','stroke',rgba($purple, 0.12));
+    @include setInheritProperty('orange','stroke',$orange);
+    @include setInheritProperty('green','stroke',$light-green);
+    @include setInheritProperty('red','stroke',$red);
+  }
+}
