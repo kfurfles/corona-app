@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   url: {
-    byCountry: 'https://covid19-brazil-api.now.sh/api/report/v1/brazil'
+    byCountry: 'https://covid19-brazil-api.now.sh/api/report/v1/brazil',
+    states: 'https://covid19-brazil-api.now.sh/api/report/v1'
   }
 };
 

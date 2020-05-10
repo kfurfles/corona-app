@@ -48,7 +48,7 @@
   }
 
   &__icon{
-    @include setInheritProperty('purple','fill',rgba($purple, 0.12));
+    @include setInheritProperty('purple','fill',$purple);
     @include setInheritProperty('orange','fill',$orange);
     @include setInheritProperty('green','fill',$light-green);
     @include setInheritProperty('red','fill',$red);
@@ -77,7 +77,7 @@
     z-index: 1000;
     opacity: 0.16;
 
-    @include setInheritProperty('purple','stroke',rgba($purple, 0.12));
+    @include setInheritProperty('purple','stroke',$purple);
     @include setInheritProperty('orange','stroke',$orange);
     @include setInheritProperty('green','stroke',$light-green);
     @include setInheritProperty('red','stroke',$red);

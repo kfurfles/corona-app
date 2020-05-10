@@ -1,4 +1,5 @@
-<svg style="font-family: 'SF UI Display Medium'"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="336" height="147.212" viewBox="0 0 336 147.212">
+<svg style="font-family: 'SF UI Display Medium'" xmlns="http://www.w3.org/2000/svg" width="336" height="147.212"
+     viewBox="0 0 336 147.212">
   <defs>
     <linearGradient id="linear-gradient" x1="0.032" y1="0.563" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#60be93"/>

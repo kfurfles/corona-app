@@ -8,7 +8,7 @@
     "test": "jest",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy": "npm run ng build --prod && firebase deploy"

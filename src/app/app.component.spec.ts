@@ -1,5 +1,5 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {async, TestBed} from '@angular/core/testing';
+import {AppComponent} from './app.component';
 import {DashboardComponent} from './components/dashboard/dashboard.component';
 import {TitleComponent} from './components/title/title.component';
 import {NgSelectModule} from '@ng-select/ng-select';
@@ -9,6 +9,7 @@ import {PersonIconComponent} from './components/person-icon/person-icon.componen
 import {GraphicIconComponent} from './components/graphic-icon/graphic-icon.component';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserModule} from '@angular/platform-browser';
+import {ShareComponent} from './components/share/share.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -20,6 +21,7 @@ describe('AppComponent', () => {
         InfoCardComponent,
         PersonIconComponent,
         GraphicIconComponent,
+        ShareComponent
       ],
       imports: [
         HttpClientModule,

@@ -1,5 +1,22 @@
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
+.ng-select.ng-select-single .ng-select-container {
+  height: 40px;
+}
+
+.ng-custom{
+  &__option{
+
+    img{
+      margin-right: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
 ca-dashboard{
   display: block;
 }
@@ -13,5 +30,9 @@ ca-dashboard{
     &:not(:last-child){
       margin-bottom: 20px;
     }
+  }
+
+  &__share{
+    margin-top: 40px;
   }
 }
