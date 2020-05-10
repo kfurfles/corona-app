@@ -53,5 +53,7 @@ jobs:
       # ddeploy the angular app to firebase
       - name: Deploy angular app to Firebase
         uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting --project corona-app-8de93 
         env:
             FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
